@@ -62,31 +62,30 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
-        <Routes basename="/react-proxy">
-          <Route
-            path="/"
-            element={<LoginUser user={user} onChangeForm={onChangeForm} LoginUser={userLogin} />}
-          />
-          <Route
-            exact
-            path="users"
-            element={
-              <DisplayBoard
-                numberOfUsers={numberOfUsers}
-                getAllUsers={fetchAllUsers}
-                logoutHandle={logoutHandler}
-              />
-            }
-          >
-            <Route path="/users/list" element={<Users users={users} />} />
-            <Route
-              path="/users/create"
-              element={<CreateUser user={user} onChangeForm={onChangeForm} createUser={userCreate} />}
+      <Routes basename="/react-proxy">
+        <Route
+          path="/"
+          element={<LoginUser user={user} onChangeForm={onChangeForm} LoginUser={userLogin} />}
+        />
+        <Route
+          exact
+          path="users"
+          element={
+            <DisplayBoard
+              numberOfUsers={numberOfUsers}
+              getAllUsers={fetchAllUsers}
+              logoutHandle={logoutHandler}
             />
-          </Route>
-        </Routes>
-      </HashRouter>
+          }
+        >
+          <Route path="/users/list" element={<Users users={users} />} />
+          <Route
+            path="/users/create"
+            element={<CreateUser user={user} onChangeForm={onChangeForm} createUser={userCreate} />}
+          />
+        </Route>
+      </Routes>
+
       {/* {loggedIn && (
         <>
           <Header logout={logoutHandler}></Header>
