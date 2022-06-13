@@ -20,7 +20,7 @@ module.exports = function (app) {
   app.use(
     "^/abc/",
     createProxyMiddleware({
-      target: "http://localhost:8080",
+      target: " https://1b6a-2405-201-2010-4004-fd7d-d8b8-872e-af2c.ngrok.io",
       changeOrigin: true,
       pathRewrite: {
         "^/abc/posdfir@3!!": "/api/login", // rewrite path
