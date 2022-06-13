@@ -1,12 +1,14 @@
 {
+  "homepage": "http://Mohit-godvani.github.io/react-proxy",
   "name": "my-app",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "bootstrap": "^4.5.0",
+    "gh-pages": "^4.0.0",
     "http-proxy-middleware": "^2.0.6",
     "https-proxy-agent": "^5.0.1",
     "react": "^16.13.1",
@@ -16,6 +18,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",

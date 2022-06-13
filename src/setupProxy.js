@@ -1,7 +1,6 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = function (app) {
-  const client_host = process.env.REACT_APP_CLIENTHOST;
   app.use(
     "/anyPath",
     createProxyMiddleware({
@@ -20,7 +19,7 @@ module.exports = function (app) {
   app.use(
     "^/abc/",
     createProxyMiddleware({
-      target: " https://1b6a-2405-201-2010-4004-fd7d-d8b8-872e-af2c.ngrok.io",
+      target: "http://localhost:8080",
       changeOrigin: true,
       pathRewrite: {
         "^/abc/posdfir@3!!": "/api/login", // rewrite path
@@ -29,7 +28,7 @@ module.exports = function (app) {
         "^/abc/ji@213sd@": "/api/logout", // rewrite path
       },
       router: {
-        //"https://fluffy-dieffenbachia-e726b7.netlify.app": "http://localhost:8080",
+        //"8c7b-2405-201-2010-4004-fd7d-d8b8-872e-af2c.ngrok.io": "http://localhost:8080",
       },
       onProxyReq(proxyReq, req, res) {
         // add custom header to request
@@ -38,6 +37,10 @@ module.exports = function (app) {
         proxyReq.setHeader("x-monty", "belyfe");
         proxyReq.setHeader("cookie", req.headers.cookie + "; dummycookie = fightforce");
         // or log the req
+      },
+      onError(err, req, res) {
+        console.log(err);
+        console.log(res);
       },
     })
   );

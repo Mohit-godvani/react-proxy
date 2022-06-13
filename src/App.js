@@ -62,7 +62,7 @@ function App() {
 
   return (
     <div className="App">
-      <Routes>
+      <Routes basename="/react-proxy">
         <Route
           path="/"
           element={<LoginUser user={user} onChangeForm={onChangeForm} LoginUser={userLogin} />}
