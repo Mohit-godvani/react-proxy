@@ -18,7 +18,7 @@ module.exports = function (app) {
     })
   );
   app.use(
-    "/abc/",
+    "^/abc/",
     createProxyMiddleware({
       target: "http://localhost:8080",
       changeOrigin: true,
@@ -29,7 +29,7 @@ module.exports = function (app) {
         "^/abc/ji@213sd@": "/api/logout", // rewrite path
       },
       router: {
-        "https://fluffy-dieffenbachia-e726b7.netlify.app": "http://localhost:8080",
+        //"https://fluffy-dieffenbachia-e726b7.netlify.app": "http://localhost:8080",
       },
       onProxyReq(proxyReq, req, res) {
         // add custom header to request
