@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-proxy/static/css/main.7071ae30.chunk.css",
-    "main.js": "/react-proxy/static/js/main.b0068801.chunk.js",
-    "main.js.map": "/react-proxy/static/js/main.b0068801.chunk.js.map",
+    "main.js": "/react-proxy/static/js/main.7b484c2e.chunk.js",
+    "main.js.map": "/react-proxy/static/js/main.7b484c2e.chunk.js.map",
     "runtime-main.js": "/react-proxy/static/js/runtime-main.c2cade7b.js",
     "runtime-main.js.map": "/react-proxy/static/js/runtime-main.c2cade7b.js.map",
     "static/css/2.af3c1da9.chunk.css": "/react-proxy/static/css/2.af3c1da9.chunk.css",
     "static/js/2.ee0d57f5.chunk.js": "/react-proxy/static/js/2.ee0d57f5.chunk.js",
     "static/js/2.ee0d57f5.chunk.js.map": "/react-proxy/static/js/2.ee0d57f5.chunk.js.map",
     "index.html": "/react-proxy/index.html",
-    "precache-manifest.2d731ce39bc7f62460a94983b6c0a1e3.js": "/react-proxy/precache-manifest.2d731ce39bc7f62460a94983b6c0a1e3.js",
+    "precache-manifest.b37277f7dc30b0c22d282eadde7fd20b.js": "/react-proxy/precache-manifest.b37277f7dc30b0c22d282eadde7fd20b.js",
     "service-worker.js": "/react-proxy/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/react-proxy/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.7071ae30.chunk.css.map": "/react-proxy/static/css/main.7071ae30.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.ee0d57f5.chunk.js",
     "static/css/main.7071ae30.chunk.css",
-    "static/js/main.b0068801.chunk.js"
+    "static/js/main.7b484c2e.chunk.js"
   ]
 }

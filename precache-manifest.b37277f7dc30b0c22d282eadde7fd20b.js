@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "01b414e30be6287bf6b31a63c71e04b9",
+    "revision": "ef645ecd4253395ccdf91a367dfd1ea8",
     "url": "/react-proxy/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-proxy/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "cdf64ecd502c4d8c0344",
+    "revision": "13349a6dabaf43b1f21c",
     "url": "/react-proxy/static/css/main.7071ae30.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-proxy/static/js/2.ee0d57f5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cdf64ecd502c4d8c0344",
-    "url": "/react-proxy/static/js/main.b0068801.chunk.js"
+    "revision": "13349a6dabaf43b1f21c",
+    "url": "/react-proxy/static/js/main.7b484c2e.chunk.js"
   },
   {
     "revision": "913de29edfe793c74f60",
