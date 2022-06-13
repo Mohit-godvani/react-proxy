@@ -20,7 +20,7 @@ module.exports = function (app) {
   app.use(
     "/abc/",
     createProxyMiddleware({
-      target: "http://localhost:123",
+      target: "http://localhost:8080",
       changeOrigin: true,
       pathRewrite: {
         "^/abc/posdfir@3!!": "/api/login", // rewrite path
