@@ -12,7 +12,9 @@ export const Header = ({ logout }) => {
   return (
     <div style={headerStyle}>
       <h1 style={{ cursor: "pointer" }} onClick={(e) => logout()}>
-        <span>&#128516;</span>
+        <span role="img" aria-label="">
+          &#128516;
+        </span>
         <span>Logout</span>
       </h1>
     </div>

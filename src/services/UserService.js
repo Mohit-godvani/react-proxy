@@ -39,7 +39,6 @@ export async function Login(data) {
 }
 
 export async function logout() {
-  var tkn = process.env.REACT_APP_TOKEN;
   const response = await fetch(`/abc/ji@213sd@`, {
     mode: "cors",
     headers: { "Content-Type": "application/json" },
