@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { HashRouter, Routes, Route, useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { Users } from "./components/Users";
@@ -62,30 +62,31 @@ function App() {
 
   return (
     <div className="App">
-      <Routes basename="/react-proxy">
-        <Route
-          path="/"
-          element={<LoginUser user={user} onChangeForm={onChangeForm} LoginUser={userLogin} />}
-        />
-        <Route
-          exact
-          path="users"
-          element={
-            <DisplayBoard
-              numberOfUsers={numberOfUsers}
-              getAllUsers={fetchAllUsers}
-              logoutHandle={logoutHandler}
-            />
-          }
-        >
-          <Route path="/users/list" element={<Users users={users} />} />
+      <HashRouter>
+        <Routes basename="/react-proxy">
           <Route
-            path="/users/create"
-            element={<CreateUser user={user} onChangeForm={onChangeForm} createUser={userCreate} />}
+            path="/"
+            element={<LoginUser user={user} onChangeForm={onChangeForm} LoginUser={userLogin} />}
           />
-        </Route>
-      </Routes>
-
+          <Route
+            exact
+            path="users"
+            element={
+              <DisplayBoard
+                numberOfUsers={numberOfUsers}
+                getAllUsers={fetchAllUsers}
+                logoutHandle={logoutHandler}
+              />
+            }
+          >
+            <Route path="/users/list" element={<Users users={users} />} />
+            <Route
+              path="/users/create"
+              element={<CreateUser user={user} onChangeForm={onChangeForm} createUser={userCreate} />}
+            />
+          </Route>
+        </Routes>
+      </HashRouter>
       {/* {loggedIn && (
         <>
           <Header logout={logoutHandler}></Header>
